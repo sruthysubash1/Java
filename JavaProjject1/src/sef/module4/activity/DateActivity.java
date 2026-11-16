@@ -1,4 +1,4 @@
-package Activity1;
+package sef.module4.activity;
 import java.util.Date;
 
 public class DateActivity {

@@ -1,4 +1,4 @@
-package Activity1;
+package sef.module4.activity;
 
 public class OperatorActivity {
     public static void main(String[] args) {
