@@ -1,6 +1,6 @@
 package Activity1;
 
-public interface AddWholeNum {
+public class AddWholeNum {
 
     public static void main(String[] args) {
 
