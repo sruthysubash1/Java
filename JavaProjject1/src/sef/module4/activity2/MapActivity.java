@@ -32,7 +32,7 @@ import java.util.Iterator;
             // 3 - Type code to print this map (keys and values)
             Set keys = map.keySet();
             for (Object key : keys) {
-                System.out.println("\t" + key + "\t" + map.get(key));
+                System.out.println(  "\t"+key + "\t" + map.get(key));
             }
 
         }
