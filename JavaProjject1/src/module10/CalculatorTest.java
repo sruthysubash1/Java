@@ -28,7 +28,7 @@ public class CalculatorTest {
         assertEquals(10, calculator.add(10, -8, 3, 5));
     }
 
-    // 2 test cases for subtract method (3.2.1) ---
+    // 2 test cases for subtract method
 
     @Test
     public void testSubtractPositiveNumbers() {
@@ -40,7 +40,7 @@ public class CalculatorTest {
         assertEquals(-4, calculator.subtract(5, 9));
     }
 
-    //2 test cases for divide method (3.2.2) ---
+    //2 test cases for divide method
 
     @Test
     public void testDivideValidNumbers() {
@@ -52,7 +52,7 @@ public class CalculatorTest {
         assertEquals(0, calculator.divide(20, 0));
     }
 
-    //2 test cases for multiply method (3.2.2) ---
+    //2 test cases for multiply method
 
     @Test
     public void testMultiplyValidNumbers() {
