@@ -76,6 +76,7 @@ public class Employee extends Person {
         System.out.println("I am work as " + jobTitle + " in " + company + " and my salary is " + salary);
     }
 
+    //Method to find and return the name of the employee with the highest salary
     public String getHighestPaidEmp(List<Employee> employeeList) {
 
         Employee highest = employeeList.get(0);
