@@ -1,10 +1,12 @@
 package module10;
 
+import java.util.List;
+
 public class Employee extends Person {
 
-    public String jobTitle;
-    public String company;
-    public double salary;
+    private String jobTitle;
+    private String company;
+    private double salary;
 
     //Default constructor
     public Employee()
@@ -17,7 +19,8 @@ public class Employee extends Person {
      company name
      employee's salary
      */
-    public Employee(String jobTitle, String company, double salary) {
+    public Employee(String jobTitle, String company, double salary)
+    {
         this.jobTitle = jobTitle;
         this.company = company;
         this.salary = salary;
@@ -35,35 +38,55 @@ public class Employee extends Person {
     }
 
     //Gets job title
-    public String getJobTitle() {
+    public String getJobTitle()
+    {
         return jobTitle;
     }
     //Gets the company name
-    public String getCompany() {
+    public String getCompany()
+    {
         return company;
     }
     //Gets the salary
-    public double getSalary() {
+    public double getSalary()
+    {
         return salary;
     }
     //Set jobTitle
-    public void setJobTitle(String newJobTitle) {
+    public void setJobTitle(String newJobTitle)
+    {
         jobTitle = newJobTitle;
     }
     // Set company name
-    public void setCompany(String newCompany) {
+    public void setCompany(String newCompany)
+    {
         company = newCompany;
     }
     //Set salary
-    public void setSalary(double newSalary) {
+    public void setSalary(double newSalary)
+    {
         salary = newSalary;
     }
 
     //Print employee details
     @Override
-    public void introduce() {
+    public void introduce()
+    {
         System.out.println("My name is " + getName() + " and i am " + getAge() + " years old");
         System.out.println("I am work as " + jobTitle + " in " + company + " and my salary is " + salary);
+    }
+
+    public String getHighestPaidEmp(List<Employee> employeeList) {
+
+        Employee highest = employeeList.get(0);
+        for (Employee employee : employeeList)
+        {
+            if (employee.getSalary() > highest.getSalary())
+            {
+                highest = employee;
+            }
+        }
+        return highest.getName();
     }
 }
 
